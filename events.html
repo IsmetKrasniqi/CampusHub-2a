@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events | CampusHub</title>
 </head>
+
 <body>
     <header>
         <h1>Events</h1>
         <p>Discover events in your uni.</p>
 
         <nav>
-            <a href = "index.html">Home</a>
-            <a href = "events.html">Events</a>
-            <a href = "clubs.html">Clubs</a>
-            <a href = "#">About</a>
-            <a href = "#">Contact</a>
+            <a href="index.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="clubs.html">Clubs</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
         </nav>
 
     </header>
-    
+
     <main>
         <section>
             <h2>Upcoming Events</h2>
@@ -41,7 +43,7 @@
 
             </article>
         </section>
-        
+
         <aside>
             <p>Join cybersecurity event</p>
             <p>Please register for this upcoming event.</p>
@@ -53,40 +55,85 @@
             <h2>Event Schedule</h2>
 
             <table>
-            <thead>
-                <tr> 
-                    <th>Event</th>
-                    <th>Date</th>
-                    <th>Location</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Web Workshop</td>
-                    <td>15 October</td>
-                    <td>Room 204</td>
-                </tr>
-                <tr>
-                    <td>Programming Club</td>
-                    <td>16 October</td>
-                    <td>Room 210</td>
-                </tr>
-                <tr>
-                    <td>Career Day</td>
-                    <td>19 September</td>
-                    <td>Room 90</td>
-                </tr>
-                <tr>
-                    <td>Students day</td>
-                    <td>22 September</td>
-                    <td>Room 70</td>
-                </tr>
-            </tbody>
-        </table>
+                <thead>
+                    <tr>
+                        <th>Event</th>
+                        <th>Date</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Web Workshop</td>
+                        <td>15 October</td>
+                        <td>Room 204</td>
+                    </tr>
+                    <tr>
+                        <td>Programming Club</td>
+                        <td>16 October</td>
+                        <td>Room 210</td>
+                    </tr>
+                    <tr>
+                        <td>Career Day</td>
+                        <td>19 September</td>
+                        <td>Room 90</td>
+                    </tr>
+                    <tr>
+                        <td>Students day</td>
+                        <td>22 September</td>
+                        <td>Room 70</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Join event</h2>
+            <form>
+                <div>
+                    <label for="name">Full name:</label>
+                    <input type="text" required id="name" name="name" minlength="3" maxlength="50">
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" required id="email" name="email">
+                </div>
+
+                <div>
+                    <label for="event">Subject:</label>
+                    <select id="event" name="event" required>
+                        <option value="">"Select a event"</option>
+                        <option value="events">" Chess Day"</option>
+                        <option value="clubs">" Festive Day"</option>
+                        <option value="other">"Other "</option>
+                </div>
+                <p>Statusi i studentit:</p>
+                <div>
+                    <input type="radio" id="current-student" name="student-status">
+                    <label for="current-student">Student aktual</label>
+                
+                    <input type="radio" id="graduate" name="student-status">
+                    <label for="graduate">I diplomuar</label>
+                </div>
+                <div>
+                    <label for="message">Mesazhi:</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+                </div>
+                <!--Check boxes -->
+                <div>
+                <input type="checkbox" name="updates" id="updates" name="yes">
+                <label for=" updates">Deshiroj te marr njoftime per ngjarjet e ardhshme</label>
+                </div>
+
+                <button type="submit">Submit form:</button>
+
+            </form>
         </section>
     </main>
     <footer>
-            <p>&copy; 2023 CampusHub. All rights reserved.</p>
-        </footer>
+        <p>&copy; 2023 CampusHub. All rights reserved.</p>
+    </footer>
 </body>
+
 </html>
