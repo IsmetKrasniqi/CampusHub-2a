@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: aliceblue;
+    color: #333333;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #172554;
+    color: white;
+    padding: 30px 24px;
+    border-bottom: 4px solid #1d4ed8;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+nav {
+    margin-top: 16px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+nav a:hover {
+    background-color: #1d4ed8;
+}
+
+main {
+    padding: 32px 24px;
+    flex: 1;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #1d4ed8;
+    font-size: 26px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+section,
+.events-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+section > h2 {
+    grid-column: 1 / -1;
+}
+
+article,
+aside,
+.event-card,
+.club-card {
+    background-color: white;
+    padding: 0 0 20px 0;
+    margin-bottom: 0;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+article:hover,
+aside:hover,
+.event-card:hover,
+.club-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+article img,
+aside img,
+.event-card img,
+.club-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.event-card h2,
+.event-card h3,
+.club-card h3,
+article h3,
+article p,
+article button,
+aside p,
+aside button {
+    padding: 0 20px;
+    margin-top: 12px;
+}
+
+.event-card h2,
+.event-card h3,
+.club-card h3,
+article h3 {
+    color: #172554;
+    margin-bottom: 8px;
+}
+
+.event-card p,
+.club-card p,
+article p,
+aside p {
+    margin-bottom: 12px;
+    line-height: 1.6;
+    overflow: hidden;
+}
+
+button {
+    margin: auto 20px 0 20px;
+    padding: 10px 16px;
+    background-color: #1d4ed8;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #172554;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #f59e0b;
+    outline-offset: 3px;
+}
+
+@media (max-width: 900px) {
+    section,
+    .events-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    section,
+    .events-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+footer {
+    background-color: #172554;
+    color: white;
+    padding: 24px;
+    margin-top: 30px;
+    text-align: center;
+    border-top: 4px solid #1d4ed8;
+}
+
+footer p {
+    margin: 0;
+}

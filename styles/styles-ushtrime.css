@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+}
+
+p{
+    color:green;
+}
+
+a{
+    text-decoration: none;
+}
+
+.event-card{
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #dddddd;
+}
+
+#site-header{
+    background-color: gray;
+}
+
+nav a{
+    color:white;
+}
+
+article p{
+    color:gray;
+}
+
+nav > a{
+    color:pink;
+}
+
+h3 + p{
+    color:yellow
+}
+
+h1, h2, h3{
+    font-family: Arial, sans-serif;
+    color:navy;
+}
+
+input[type="email"]{
+    border: 1px solid blue;
+}
+
+a[target="blank"]{
+    color: red;
+}
+
+a:hover{
+    color:orange;
+}
+
+input:focus{
+    color: red;
+}
+
+li:first-child{
+    font-weight: bold;
+}
+li:last-child{
+    font-weight: 700;
+}
+
+main p{
+    color:rgb(rgb(234, 134, 134) green blue / alpha);
+    font-size: 45px;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 1.6;
+}
+
+main{
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+}
+
+main.event{
+    padding: 20px;
+    border: 1px dashed red;
+    margin-bottom: 15px;
+}
+/* main .event-description{
+    color: red;
+} */
+
